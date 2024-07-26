@@ -1,0 +1,23 @@
+{
+  "name": "krogerjs",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --hot run index.ts",
+    "build": "bun build --target=bun ./index.ts --outfile=server.js",
+    "start": "bun run server.js"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.20",
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/body-parser": "^1.19.5",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}
